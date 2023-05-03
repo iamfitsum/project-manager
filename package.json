@@ -34,6 +34,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cookie": "^0.5.1",
     "prettier-plugin-prisma": "^4.13.0",
     "prisma": "^4.13.0",
     "ts-node": "^10.9.1",

@@ -16,8 +16,8 @@ model User {
   updatedAt DateTime @updatedAt
 
   email     String    @unique
-  firstName String?
-  lastName  String?
+  firstName String
+  lastName  String
   password  String
   projects  Project[]
   tasks     Task[]
