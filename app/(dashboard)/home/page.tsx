@@ -10,6 +10,8 @@ import { cookies } from "next/headers";
 import Link from "next/link";
 import { Suspense } from "react";
 
+export const dynamic = "force-dynamic";
+
 const getData = async () => {
   await delay(2000);
   const user = await getUserFromCookie(cookies());
