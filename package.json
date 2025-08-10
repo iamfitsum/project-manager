@@ -2,11 +2,13 @@
   "name": "project-manager",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@9.10.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "prisma": {
     "seed": "ts-node -P tsconfig-seed.json -r tsconfig-paths/register --transpileOnly prisma/seed.ts"
@@ -26,7 +28,7 @@
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
     "jose": "^4.14.4",
-    "next": "13.3.4",
+    "next": "14.2.30",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
